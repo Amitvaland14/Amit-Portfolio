@@ -5,7 +5,7 @@ let typed = new Typed(".typing", {
     BackSpeed:100,
     loop:true
 })
-
+/* aside */
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
     totalNavList = navList.length,

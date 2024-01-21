@@ -810,10 +810,7 @@ h3.my-profession
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img
-    {
-        display: none;
-    }
+  
 }
 @media (max-width:767px)
 {
@@ -829,4 +826,42 @@ h3.my-profession
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .home .home-img img
+    {
+        height: 280px;
+    }
+    .home-img::after
+    {
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
+        right:  -30px;
+        bottom: 10px;
+        
+    }
+    .home-img::before
+    {
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-top: 10px solid var(--skin-color);
+        border-left: 10px solid var(--skin-color);
+        left:  -20px;
+        top: -40px;
+    }
+    .home .home-img img
+    {
+        margin: auto;
+        border-radius: 10px;
+        height: 200px;
+    }
+    .btn
+    {
+        margin-bottom: 80px;
+    }
+    
 }
